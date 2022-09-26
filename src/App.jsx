@@ -97,7 +97,7 @@ function App() {
                 </>
             )}
             <button onClick={getUserCoordinates}>Click here to get Local Weather</button>
-            <p>Want to see the news near you? <a href={`https://www.bbc.co.uk/search?q=${weatherData?.location.region}`} > CLICK HERE!</a></p>
+            <p>Want to see the news near you? <a href={`https://www.bbc.co.uk/search?q=${weatherData?.location.region}`} target="_blank"> CLICK HERE!</a></p>
         </div>
     );
 }
