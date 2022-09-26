@@ -73,9 +73,16 @@ function App() {
         }
     }, [forecastData]);
 
+    const currentHour = new Date().getHours();
+    let greetingTime = "Morning!";
+  
+    if (currentHour >= 12) {greetingTime = "Afternoon!"}
+    if (currentHour >= 18) {greetingTime = "Evening!"}
+
     return (
         <div className="Forecast">
           <h1>Welcome to website that can read the sky above you</h1>
+          <h1>Good {greetingTime} Ready to see the weather that lies ahead?</h1>
             {weatherData && (
                 <>
                     <h2>
