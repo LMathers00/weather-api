@@ -42,5 +42,5 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
   },
-  "homepage": "https://lmathers00.github.io/weather-api/"
+  "homepage": "https://lmathers00.github.io/weather-api"
 }
